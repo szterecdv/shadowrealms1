@@ -643,6 +643,67 @@ h2 {
     margin-top: 10px;
 }
 
+/* Visszaszámláló oldal stílusa */
+.countdown-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.countdown-container {
+    padding: 40px;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-top: -100px;
+}
+
+.countdown-container h1 {
+    font-size: 3em;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px var(--primary-color);
+    animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+    0% { transform: scale(1); text-shadow: 0 0 10px var(--primary-color); }
+    50% { transform: scale(1.05); text-shadow: 0 0 20px var(--primary-color); }
+    100% { transform: scale(1); text-shadow: 0 0 10px var(--primary-color); }
+}
+
+.countdown-container p {
+    color: var(--muted-text-color);
+    font-size: 1.2em;
+}
+
+.countdown-container .timer {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+    margin-top: 20px;
+}
+
+/* Új stílus a sarok gombnak */
+.corner-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: var(--muted-text-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.corner-btn:hover {
+    color: var(--primary-color);
+    transform: rotate(90deg);
+}
+
 /* Lábléc (Footer) stílusa */
 footer {
     text-align: center;
