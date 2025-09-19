@@ -9,6 +9,8 @@
 </head>
 <body class="countdown-page">
 
+    <a href="#" id="settings-btn" class="corner-btn"><i class="fas fa-cog"></i></a>
+
     <div class="countdown-container">
         <h1>A Szerver Hamarosan Elindul</h1>
         <p>A ShadowRealms új korszaka elindul!</p>
@@ -22,6 +24,21 @@
         <p class="launch-info" id="launch-info">Készülj fel az indulásra!</p>
     </div>
 
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Bejelentkezés</h2>
+            <p>Csak a tulajdonosoknak és a karbantartóknak</p>
+            <form id="admin-login-form">
+                <input type="text" id="admin-username" placeholder="Felhasználónév" required>
+                <input type="password" id="admin-password" placeholder="Jelszó" required>
+                <button type="submit" class="cta-button">Belépés</button>
+            </form>
+            <p id="login-error" class="error-message"></p>
+        </div>
+    </div>
+    
     <script src="countdown.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
