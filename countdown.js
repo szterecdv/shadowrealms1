@@ -1,5 +1,5 @@
 // A cél dátum: 2025. október 18., éjfél (magyar idő szerint)
-const countdownDate = new Date("October 18, 2025 00:00:00 GMT+02:00").getTime();
+const countdownDate = new Date("December 20, 2025 00:00:00 GMT+02:00").getTime();
 
 const x = setInterval(function() {
     const now = new Date().getTime();
@@ -68,4 +68,5 @@ if (loginForm) {
             errorMsg.style.display = "block";
         }
     };
+
 }
